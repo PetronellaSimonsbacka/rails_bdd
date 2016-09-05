@@ -3,3 +3,12 @@
 <p>Some really breaking action</p>
 <p>Learn Rails 5</p>
 <p>Build awesome rails applications</p>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= article.title %><br />
+      <%= article.content %>
+    </li>
+  <% end %>
+</ul>
